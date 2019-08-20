@@ -3,8 +3,6 @@ import random
 from PyQt5.QtWidgets import * 
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
-
-class MyWidget(QWidget):
 	"""docstring for MyWidget"""
 	def __init__(self):
 		super().__init__()
