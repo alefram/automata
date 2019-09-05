@@ -2,7 +2,9 @@ import sys
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
-
+from combinacional import combinacional
+from mealy import mealy
+from moore import moore
 
 class App(QWidget):
 	"""docstring for App"""
@@ -14,14 +16,16 @@ class App(QWidget):
 		self.setLayout(layout)
 
 		#barra de menu
-		label1 = QLabel("Widget in Tab 1.")
-		label2 = QLabel("Widget in Tab 2.")
-		label3 = QLabel("widget in tab 3")
+		comb = combinacional()
+		mea = mealy()
+		moor = moore()
+
 		menubar = QTabWidget()
-		menubar.addTab(label1,"automata mealy")
-		menubar.addTab(label2,"automata moore")
-		menubar.addTab(label3,"combinacional")
+		menubar.addTab(mea,"automata mealy")
+		menubar.addTab(moor,"automata moore")
+		menubar.addTab(comb,"combinacional")
 		layout.addWidget(menubar,0,0)
+
 
 		
 
