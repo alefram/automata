@@ -2,30 +2,29 @@ import sys
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
-
+from combinacional import combinacional
+from mealy import mealy
+from moore import moore
 
 class App(QWidget):
 	"""docstring for App"""
 	def __init__(self):
 		super(App, self).__init__()
-		self.setGeometry(50,50,800,500)
+		self.setGeometry(50, 50, 800, 500)
 		self.setWindowTitle("MEPIC18F")
 		layout = QGridLayout()
 		self.setLayout(layout)
 
 		#barra de menu
-		label1 = QLabel("Widget in Tab 1.")
-		label2 = QLabel("Widget in Tab 2.")
-		label3 = QLabel("widget in tab 3")
+		_combinacional = combinacional()
+		_mealy = mealy()
+		_moore = moore()
+
 		menubar = QTabWidget()
-		menubar.addTab(label1,"automata mealy")
-		menubar.addTab(label2,"automata moore")
-		menubar.addTab(label3,"combinacional")
-		layout.addWidget(menubar,0,0)
-
-		
-
-        
+		menubar.addTab(_mealy, "automata mealy")
+		menubar.addTab(_moore, "automata moore")
+		menubar.addTab(_combinacional, "combinacional")
+		layout.addWidget(menubar, 0, 0)
 
 
 app = QApplication(sys.argv)
