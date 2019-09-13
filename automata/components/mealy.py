@@ -4,39 +4,48 @@ from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 
 
-def showDialog():
-    # win = QWidget()
-    # layout = QGridLayout()
-    # win.setLayout(layout)
-    pass
 
-def showDialog2():
-    # win = QWidget()
-    # layout = QGridLayout()
-    # win.setLayout(layout)
-    pass
+
+def tablaEntrada():
+    sw = QDialog()
+    sw.setWindowTitle("tabla de entrada")
+    sw.exec_()
+
+
+
+def tablaSalida():
+    sw = QDialog()
+    sw.setWindowTitle("tabla de salida")
+    sw.exec_()
+    
 
 class mealy(QWidget):
+    """docstring for mealy"""
     def __init__(self):
-        super(mealy,self).__init__()
+        super(mealy, self).__init__()
+        self.setGeometry(50, 50, 800, 500)
+        self.setWindowTitle("mealy")
         layout = QGridLayout()
         self.setLayout(layout)
         
+        #svg
+
+  
         
 
         #botones
-        combEntrada = QPushButton()
-        combEntrada.setText('entrada')
-        combEntrada.clicked.connect(showDialog)
-        label2 = QLabel("Widget in Tab comb.")
+        combEntrada = QPushButton('entrada', self)
+        combEntrada.clicked.connect(tablaEntrada)
         
-        combSalida = QPushButton()
-        combSalida.setText('salida')
-        combSalida.clicked.connect(showDialog2)
-        label2 = QLabel("Widget in Tab mealy")
+        combSalida = QPushButton('salida', self)
+        combSalida.clicked.connect(tablaSalida)
 
-        layout.addWidget(label2)
-        layout.addWidget(combEntrada)
-        layout.addWidget(combSalida)
+
+        #adding widgets
+        layout.addWidget(combEntrada,1,1)
+        layout.addWidget(combSalida,1,2)
+        #layout.addWidget(foto, )
+
+    
         
-        
+     

@@ -10,26 +10,21 @@ class App(QWidget):
 	"""docstring for App"""
 	def __init__(self):
 		super(App, self).__init__()
-		self.setGeometry(50,50,800,500)
+		self.setGeometry(50, 50, 800, 500)
 		self.setWindowTitle("MEPIC18F")
 		layout = QGridLayout()
 		self.setLayout(layout)
 
 		#barra de menu
-		comb = combinacional()
-		mea = mealy()
-		moor = moore()
+		_combinacional = combinacional()
+		_mealy = mealy()
+		_moore = moore()
 
 		menubar = QTabWidget()
-		menubar.addTab(mea,"automata mealy")
-		menubar.addTab(moor,"automata moore")
-		menubar.addTab(comb,"combinacional")
-		layout.addWidget(menubar,0,0)
-
-
-		
-
-        
+		menubar.addTab(_mealy, "automata mealy")
+		menubar.addTab(_moore, "automata moore")
+		menubar.addTab(_combinacional, "combinacional")
+		layout.addWidget(menubar, 0, 0)
 
 
 app = QApplication(sys.argv)

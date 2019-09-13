@@ -4,39 +4,37 @@ from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 
 
-def showDialog():
-    # win = QWidget()
-    # layout = QGridLayout()
-    # win.setLayout(layout)
-    pass
 
-def showDialog2():
-    # win = QWidget()
-    # layout = QGridLayout()
-    # win.setLayout(layout)
-    pass
+def tablaEntrada():
+    sw = QDialog()
+    sw.setWindowTitle("tabla de entrada")
+    sw.exec_()
+
+def TablaSalida():
+    sw = QDialog()
+    sw.setWindowTitle("tabla de salida")
+    sw.exec_()
+
 
 class moore(QWidget):
+    """docstring for moore"""
     def __init__(self):
-        super(moore,self).__init__()
+        super(moore, self).__init__()
+        self.setGeometry(50, 50, 800, 500)
+        self.setWindowTitle("moore")
         layout = QGridLayout()
         self.setLayout(layout)
-        
-        
+
 
         #botones
-        combEntrada = QPushButton()
-        combEntrada.setText('entrada')
-        combEntrada.clicked.connect(showDialog)
-        label2 = QLabel("Widget in Tab comb.")
+        combEntrada = QPushButton('entrada', self)
+        combEntrada.clicked.connect(tablaEntrada)
         
-        combSalida = QPushButton()
-        combSalida.setText('salida')
-        combSalida.clicked.connect(showDialog2)
-        label2 = QLabel("Widget in Tab moore.")
+        combSalida = QPushButton('salida', self)
+        combSalida.clicked.connect(TablaSalida)
 
-        layout.addWidget(label2)
-        layout.addWidget(combEntrada)
-        layout.addWidget(combSalida)
-        
+        layout.addWidget(combEntrada,1,1)
+        layout.addWidget(combSalida,1,2)
+
+
         
