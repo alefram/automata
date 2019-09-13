@@ -25,13 +25,14 @@ class mealy(QWidget):
         super(mealy, self).__init__()
         self.setGeometry(50, 50, 800, 500)
         self.setWindowTitle("mealy")
-        layout = QGridLayout()
+        layout = QVBoxLayout()
         self.setLayout(layout)
         
         #svg
+        pixmap = QPixmap("./svgs/mealy.svg")
+        svg = QLabel()
+        svg.setPixmap(pixmap)
 
-  
-        
 
         #botones
         combEntrada = QPushButton('entrada', self)
@@ -42,10 +43,13 @@ class mealy(QWidget):
 
 
         #adding widgets
-        layout.addWidget(combEntrada,1,1)
-        layout.addWidget(combSalida,1,2)
-        #layout.addWidget(foto, )
 
+        layoutI = QGridLayout()
+        layoutI.addWidget(combEntrada,1,1)
+        layoutI.addWidget(combSalida,1,2)
+
+        layout.addWidget(svg)
+        layout.addLayout(layoutI)
     
         
      

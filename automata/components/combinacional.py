@@ -19,24 +19,28 @@ def _tablaSalida():
 class combinacional(QWidget):
     def __init__(self):
         super(combinacional ,self).__init__()
-        layout = QGridLayout()
-        self.setLayout(layout)      
+        layoutP = QVBoxLayout()
+        self.setLayout(layoutP)      
 
 
         #botones
         combEntrada = QPushButton('entrada')
         combEntrada.clicked.connect(_tablaEntrada)
  
-        combSalida = QPushButton('salida', self)
+        combSalida = QPushButton('salida')
         combSalida.clicked.connect(_tablaSalida)
 
-        
-        pixmap1 = QPixmap("graficos.svg")
+        # svg
+        pixmap1 = QPixmap("./svgs/combinacional.svg")
         label = QLabel()
         label.setPixmap(pixmap1)
-        label.resize(pixmap1.width(),pixmap1.height())
+        
+        # layouts
 
-        layout.addWidget(combEntrada,1,1)
-        layout.addWidget(combSalida,1,2)
-        # layout.addWidget(label,3,7)
+        layoutI = QGridLayout()
+        layoutI.addWidget(combEntrada,1,1)
+        layoutI.addWidget(combSalida,1,2)
+        
+        layoutP.addWidget(label)
+        layoutP.addLayout(layoutI)
         

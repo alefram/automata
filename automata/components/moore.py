@@ -22,8 +22,15 @@ class moore(QWidget):
         super(moore, self).__init__()
         self.setGeometry(50, 50, 800, 500)
         self.setWindowTitle("moore")
-        layout = QGridLayout()
+        layout = QVBoxLayout()
         self.setLayout(layout)
+
+
+
+        # svg
+        pixmap = QPixmap("./svgs/moore.svg")
+        svg = QLabel()
+        svg.setPixmap(pixmap)
 
 
         #botones
@@ -33,8 +40,13 @@ class moore(QWidget):
         combSalida = QPushButton('salida', self)
         combSalida.clicked.connect(TablaSalida)
 
-        layout.addWidget(combEntrada,1,1)
-        layout.addWidget(combSalida,1,2)
 
+        # layouts
+        layoutI = QGridLayout()
 
+        layoutI.addWidget(combEntrada,1,1)
+        layoutI.addWidget(combSalida,1,2)
+
+        layout.addWidget(svg)
+        layout.addLayout(layoutI)
         
