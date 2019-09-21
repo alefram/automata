@@ -8,12 +8,14 @@ from PyQt5.QtCore import *
 class tablaSalida(QDialog):
     def __init__(self):
         super(tablaSalida ,self).__init__()
-        layout = QGridLayout()
+        layout = QVBoxLayout()
         self.setLayout(layout)      
 
-        self.edit = QLineEdit("Write my name here")
-        self.button = QPushButton("Show Greetings")
-
-        layout.addWidget(self.edit)
-        layout.addWidget(self.button)
+        #tabla
+        tabla =   QTableWidget()
+        tabla.setRowCount(8)
+        tabla.setColumnCount(8)
         
+
+        #mostrar
+        layout.addWidget(tabla)

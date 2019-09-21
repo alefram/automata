@@ -11,9 +11,12 @@ class tablaEntrada(QDialog):
         layout = QGridLayout()
         self.setLayout(layout)      
 
-        self.edit = QLineEdit("Write my name here")
-        self.button = QPushButton("Show Greetings")
+        #tabla
+        tabla =   QTableWidget()
+        tabla.setRowCount(8)
+        tabla.setColumnCount(8)
+        
 
-        layout.addWidget(self.edit)
-        layout.addWidget(self.button)
+        #mostrar
+        layout.addWidget(tabla)
         

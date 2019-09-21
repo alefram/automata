@@ -2,16 +2,17 @@ import sys
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
+from tablaEntrada import tablaEntrada
+from tablaSalida import tablaSalida
 
 
-
-def tablaEntrada():
-    sw = QDialog()
+def _tablaEntrada():
+    sw = tablaEntrada()
     sw.setWindowTitle("tabla de entrada")
     sw.exec_()
 
-def TablaSalida():
-    sw = QDialog()
+def _TablaSalida():
+    sw = tablaSalida()
     sw.setWindowTitle("tabla de salida")
     sw.exec_()
 
@@ -35,10 +36,10 @@ class moore(QWidget):
 
         #botones
         combEntrada = QPushButton('entrada', self)
-        combEntrada.clicked.connect(tablaEntrada)
+        combEntrada.clicked.connect(_tablaEntrada)
         
         combSalida = QPushButton('salida', self)
-        combSalida.clicked.connect(TablaSalida)
+        combSalida.clicked.connect(_TablaSalida)
 
 
         # layouts
