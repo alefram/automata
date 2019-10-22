@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="combinacional"
+   viewBox="0 0 952.22 286"
+   version="1.1"
+   sodipodi:docname="mealy.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata63">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="693"
+     id="namedview61"
+     showgrid="false"
+     inkscape:zoom="0.6074367"
+     inkscape:cx="323.44151"
+     inkscape:cy="37.504923"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="combinacional" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#fff;stroke-width:8px;opacity:0.98;}.cls-1,.cls-2{stroke:#424242;stroke-miterlimit:10;}.cls-2{font-size:17.68px;font-family:Chilanka-Regular, Chilanka;}.cls-2,.cls-5{fill:#424242;}.cls-3{letter-spacing:-0.08em;}.cls-4{letter-spacing:-0.12em;}</style>
+  </defs>
+  <title
+     id="title6">mealy</title>
+  <rect
+     class="cls-1"
+     x="263.77689"
+     y="100.64613"
+     width="80.894997"
+     height="81.01268"
+     id="rect8"
+     style="opacity:0.98000004;fill:#ffffff;stroke:#424242;stroke-width:6.30736399px;stroke-miterlimit:10" />
+  <text
+     class="cls-2"
+     transform="scale(0.85024058,1.1761377)"
+     id="text20"
+     x="328.73465"
+     y="119.80334"
+     style="font-size:13.51462841px;font-family:Chilanka-Regular, Chilanka;fill:#424242;stroke:#424242;stroke-width:0.76440203;stroke-miterlimit:10">
+    <tspan
+       x="319.01666"
+       y="119.80334"
+       id="tspan12"
+       style="stroke-width:0.76440203">C entrada</tspan>
+  </text>
+  <path
+     class="cls-5"
+     d="m 253.16372,124.03021 -10.6408,-6.2933 c -1.38283,-0.82711 -3.05603,0.26972 -3.05603,1.99588 v 0 a 1.9290345,2.5083274 0 0 1 -2.07423,2.27457 h -88.38989 a 1.9290345,2.5083274 0 0 0 -2.07423,2.27459 v 3.59617 a 1.9290345,2.5083274 0 0 0 2.07423,2.27457 h 88.3968 a 1.9359487,2.5173179 0 0 1 2.07423,2.28356 v 0 c 0,1.71717 1.67322,2.814 3.05603,1.99588 l 10.6408,-6.34723 a 1.6317282,2.1217394 0 0 0 -0.007,-4.05469 z"
+     id="path22"
+     inkscape:connector-curvature="0"
+     style="fill:#424242;stroke-width:0.7884205" />
+  <path
+     class="cls-5"
+     d="m 438.82811,144.85203 -9.38935,-6.61695 a 1.6317282,2.1217394 0 0 0 -2.4061,1.86101 v 0.43154 a 1.6248141,2.1127489 0 0 1 -1.62482,2.11275 h -75.07332 a 1.6248141,2.1127489 0 0 0 -1.62481,2.11275 v 3.91083 a 1.6248141,2.1127489 0 0 0 1.62481,2.11275 h 75.07332 a 1.6317282,2.1217394 0 0 1 1.62482,2.12173 v 0.43155 a 1.6317282,2.1217394 0 0 0 2.4061,1.86102 l 9.38935,-6.61695 a 1.6317282,2.1217394 0 0 0 0,-3.72203 z"
+     id="path24"
+     inkscape:connector-curvature="0"
+     style="fill:#424242;stroke-width:0.7884205" />
+  <rect
+     class="cls-1"
+     x="445.61777"
+     y="109.63654"
+     width="80.894997"
+     height="81.01268"
+     id="rect26"
+     style="opacity:0.98000004;fill:#ffffff;stroke:#424242;stroke-width:6.30736399px;stroke-miterlimit:10" />
+  <text
+     class="cls-2"
+     transform="scale(0.85024058,1.1761377)"
+     id="text28"
+     x="545.49481"
+     y="132.03377"
+     style="font-size:13.51462841px;font-family:Chilanka-Regular, Chilanka;fill:#424242;stroke:#424242;stroke-width:0.76440203;stroke-miterlimit:10">memoria</text>
+  <path
+     class="cls-5"
+     d="m 620.4685,161.78998 -8.98833,-6.2933 a 1.7492679,2.2745765 0 0 0 -2.58588,1.99588 v 0 a 1.7492679,2.2745765 0 0 1 -1.74927,2.27457 h -74.84515 a 1.7492679,2.2745765 0 0 0 -1.74928,2.27457 v 3.59617 a 1.7492679,2.2745765 0 0 0 1.74928,2.27459 h 74.82441 a 1.7561819,2.2835668 0 0 1 1.74926,2.28357 v 0 a 1.7492679,2.2745765 0 0 0 2.58588,1.99586 l 8.98833,-6.34724 a 1.7492679,2.2745765 0 0 0 0.0207,-4.05467 z"
+     id="path30"
+     inkscape:connector-curvature="0"
+     style="fill:#424242;stroke-width:0.7884205" />
+  <rect
+     class="cls-1"
+     x="627.45862"
+     y="109.63654"
+     width="80.894997"
+     height="81.01268"
+     id="rect32"
+     style="opacity:0.98000004;fill:#ffffff;stroke:#424242;stroke-width:6.30736399px;stroke-miterlimit:10" />
+  <text
+     class="cls-2"
+     transform="scale(0.85024058,1.1761377)"
+     id="text40"
+     x="743.10089"
+     y="124.38974"
+     style="font-size:13.51462841px;font-family:Chilanka-Regular, Chilanka;fill:#424242;stroke:#424242;stroke-width:0.76440203;stroke-miterlimit:10">
+    <tspan
+       class="cls-3"
+       id="tspan34"
+       style="letter-spacing:-0.08em;stroke-width:0.76440203">C salida</tspan>
+   </text>
+  <path
+     class="cls-5"
+     d="m 804.38362,144.70817 -8.98834,-6.29328 a 1.7492679,2.2745765 0 0 0 -2.58587,1.99586 v 0 a 1.7492679,2.2745765 0 0 1 -1.74927,2.27459 h -74.84515 a 1.7492679,2.2745765 0 0 0 -1.74927,2.27457 v 3.59617 a 1.7492679,2.2745765 0 0 0 1.74927,2.27457 h 74.82441 a 1.7561819,2.2835668 0 0 1 1.74927,2.28357 v 0 a 1.7492679,2.2745765 0 0 0 2.58587,1.99588 l 8.98834,-6.34724 a 1.7492679,2.2745765 0 0 0 0.0207,-4.05469 z"
+     id="path42"
+     inkscape:connector-curvature="0"
+     style="fill:#424242;stroke-width:0.7884205" />
+  <rect
+     class="cls-5"
+     y="262.5726"
+     width="410.69769"
+     height="8.9904203"
+     rx="2.96615"
+     id="rect44"
+     x="146.92853"
+     style="fill:#424242;stroke-width:0.7884205" />
+  <path
+     class="cls-5"
+     d="m 253.97267,157.98703 -13.21976,-7.91156 a 1.1200846,1.4564481 0 0 0 -1.58333,1.31259 v 2.40044 a 1.1131705,1.4474577 0 0 1 -1.10626,1.44747 h -90.02161 a 1.1131705,1.4474577 0 0 0 -1.11317,1.44745 v 5.19646 a 1.1131705,1.4474577 0 0 0 1.11317,1.44746 h 90.02161 a 1.1131705,1.4474577 0 0 1 1.10626,1.44745 v 2.39146 a 1.1200846,1.4564481 0 0 0 1.58333,1.32159 l 13.21976,-7.91157 a 1.1131705,1.4474577 0 0 0 0,-2.58924 z"
+     id="path46"
+     inkscape:connector-curvature="0"
+     style="fill:#424242;stroke-width:0.7884205" />
+  <rect
+     class="cls-5"
+     x="155.58659"
+     y="-153.84265"
+     width="115.97643"
+     height="6.9141021"
+     rx="0.80014741"
+     transform="rotate(90)"
+     id="rect48"
+     style="fill:#424242;stroke-width:0.7884205" />
+  <rect
+     class="cls-5"
+     x="160.0818"
+     y="-557.62622"
+     width="111.48122"
+     height="6.9141021"
+     rx="0.80014741"
+     transform="rotate(90)"
+     id="rect50"
+     style="fill:#424242;stroke-width:0.7884205" />
+  <rect
+     class="cls-5"
+     x="166.97945"
+     width="387.18973"
+     height="8.9904203"
+     rx="2.96615"
+     id="rect52"
+     y="14.436984"
+     style="fill:#424242;stroke-width:0.7884205" />
+  <rect
+     class="cls-5"
+     x="14.436984"
+     y="-173.89352"
+     width="115.97643"
+     height="6.9141021"
+     rx="0.80014741"
+     transform="rotate(90)"
+     id="rect54"
+     style="fill:#424242;stroke-width:0.7884205" />
+  <rect
+     class="cls-5"
+     x="14.436984"
+     y="-554.16913"
+     width="115.97643"
+     height="6.9141021"
+     rx="0.80014741"
+     transform="rotate(90)"
+     id="rect56"
+     style="fill:#424242;stroke-width:0.7884205" />
+  <path
+     class="cls-5"
+     d="m 618.47032,124.82137 -7.12844,-7.10243 c -0.92648,-0.89905 -2.07423,0.31466 -2.07423,2.2386 v 0 c 0,1.41151 -0.62228,2.5443 -1.38282,2.5443 h -59.24694 c -0.76055,0 -1.38282,1.14178 -1.38282,2.55328 v 4.00973 c 0,1.4025 0.62227,2.54429 1.38282,2.54429 H 607.871 c 0.76746,0 1.38282,1.14177 1.38282,2.54428 v 0 c 0,1.93295 1.12009,3.16463 2.07424,2.23862 l 7.14226,-7.09344 a 2.4061076,3.1286665 0 0 0 0,-4.47723 z"
+     id="path58"
+     inkscape:connector-curvature="0"
+     style="fill:#424242;stroke-width:0.7884205" />
+</svg>
