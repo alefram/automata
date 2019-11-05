@@ -5,6 +5,7 @@ from PyQt5.QtCore import *
 
 
 
+
 class tablaSalida(QDialog):
     def __init__(self):
         super(tablaSalida ,self).__init__()
@@ -12,9 +13,13 @@ class tablaSalida(QDialog):
         self.setLayout(layout)      
 
         #tabla
-        tabla =   QTableWidget()
-        tabla.setRowCount(8)
-        tabla.setColumnCount(8)
+        tabla = QTableWidget(16, 4)
+
+        def data():
+            
+            pass
+        
+        tabla.cellChanged.connect(data)
         
 
         #mostrar

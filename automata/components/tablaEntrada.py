@@ -12,9 +12,8 @@ class tablaEntrada(QDialog):
         self.setLayout(layout)      
 
         #tabla
-        tabla =   QTableWidget()
-        tabla.setRowCount(8)
-        tabla.setColumnCount(8)
+        tabla = QTableWidget(16, 4)
+        
         
 
         #mostrar
