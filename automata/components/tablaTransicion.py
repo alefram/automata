@@ -8,9 +8,9 @@ data = [[1, 2, 3, 4],
 		[2, 3, 4, 5],
 		[2, 2, 2, 2]]
 
-class tablaEntrada(QDialog):
+class tablaTransicion(QDialog):
     def __init__(self):
-        super(tablaEntrada ,self).__init__()
+        super(tablaTransicion ,self).__init__()
         layout = QGridLayout()
         self.setLayout(layout)
         self.data = data
@@ -40,7 +40,6 @@ class tablaEntrada(QDialog):
 
         def _print():
             print(self.data)
-            print(self.data[1])
 
         table.cellChanged.connect(_matrix)
         ok.clicked.connect(_print)
@@ -48,8 +47,3 @@ class tablaEntrada(QDialog):
         #mostrar
         layout.addWidget(table)
         layout.addWidget(ok)
-
-        
-
-
-        

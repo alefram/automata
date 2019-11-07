@@ -5,15 +5,14 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from serial import Serial
 
-pinguino = Serial("COM4", timeout=0.1, baudrate=9600)
+pinguino = Serial("COM5", timeout=0.1, baudrate=9600)
 pinguino.write(b"pinMode(7,OUTPUT)")
 
 data = [[1, 2, 3, 4],
 		[2, 3, 2, 4],
 		[2, 3, 4, 5],
 		[2, 2, 2, 2]]
-		
-	
+			
 def button1_clicked():
 	pinguino.write(b"digitalWrite(7,HIGH)")
 	pinguino.write(b"delay(1000)")

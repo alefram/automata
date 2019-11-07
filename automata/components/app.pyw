@@ -6,6 +6,7 @@ from combinacional import combinacional
 from mealy import mealy
 from moore import moore
 
+
 class App(QWidget):
 	"""docstring for App"""
 	def __init__(self):
