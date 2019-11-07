@@ -26,7 +26,7 @@ class mealy(QWidget):
         self.setLayout(layout)
         
         #svg
-        pixmap = QPixmap("./svgs/mealy.svg")
+        pixmap = QPixmap("svgs/mealy.svg")
         svg = QLabel()
         svg.setPixmap(pixmap)
 

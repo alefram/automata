@@ -7,14 +7,15 @@ from mealy import mealy
 from moore import moore
 
 
-class App(QWidget):
+class App(QMainWindow):
 	"""docstring for App"""
 	def __init__(self):
 		super(App, self).__init__()
 		self.setGeometry(50, 50, 800, 500)
 		self.setWindowTitle("MEPIC18F")
 		layout = QGridLayout()
-		self.setLayout(layout)
+		widget = QWidget()
+		widget.setLayout(layout)
 
 		#barra de menu
 		_combinacional = combinacional()
@@ -27,6 +28,7 @@ class App(QWidget):
 		menubar.addTab(_combinacional, "combinacional")
 		layout.addWidget(menubar, 0, 0)
 
+		self.setCentralWidget(widget)
 
 app = QApplication(sys.argv)
 screen = App()
