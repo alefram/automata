@@ -1,1 +1,21 @@
-<svg id="combinacional" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520.16 189"><defs><style>.cls-1{fill:#fff;stroke-width:8px;opacity:0.98;}.cls-1,.cls-2{stroke:#424242;stroke-miterlimit:10;}.cls-2{font-size:35.52px;font-family:Chilanka-Regular, Chilanka;}.cls-2,.cls-4{fill:#424242;}.cls-3{letter-spacing:-0.08em;}</style></defs><title>combinacional</title><rect class="cls-1" x="140.16" y="4" width="235" height="181"/><text class="cls-2" transform="translate(148.81 104) scale(0.94 1)"><tspan class="cls-3">c</tspan><tspan x="13.87" y="0">ombinacional</tspan></text><polygon class="cls-4" points="134.16 104.13 113.29 92.82 113.29 99.6 0 99.6 0 108.65 113.29 108.65 113.29 115.44 134.16 104.13"/><polygon class="cls-4" points="520.16 104.13 499.29 92.82 499.29 99.6 386 99.6 386 108.65 499.29 108.65 499.29 115.44 520.16 104.13"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="combinacional" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 520.2 189" style="enable-background:new 0 0 520.2 189;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.98;fill:#FFFFFF;stroke:#424242;stroke-width:8;stroke-miterlimit:10;enable-background:new    ;}
+	.st1{fill:#424242;}
+	.st2{font-family:'Chilanka-Regular';}
+	.st3{font-size:30.7035px;}
+	.st4{letter-spacing:-1.8;}
+	.st5{fill:none;stroke:#424242;stroke-miterlimit:10;}
+</style>
+<title>combinacional</title>
+<rect x="140.2" y="12.9" class="st0" width="235" height="156.5"/>
+<text transform="matrix(1.0875 0 0 1 148.811 99.3252)" class="st1 st2 st3 st4">c</text>
+<text transform="matrix(1.0875 0 0 1 148.811 99.3252)" class="st5 st2 st3 st4">c</text>
+<text transform="matrix(1.0875 0 0 1 161.8481 99.3252)" class="st1 st2 st3">ombinacional</text>
+<text transform="matrix(1.0875 0 0 1 161.8481 99.3252)" class="st5 st2 st3">ombinacional</text>
+<polygon class="st1" points="134.2,99.4 113.3,89.7 113.3,95.5 0,95.5 0,103.3 113.3,103.3 113.3,109.2 "/>
+<polygon class="st1" points="520.2,99.4 499.3,89.7 499.3,95.5 386,95.5 386,103.3 499.3,103.3 499.3,109.2 "/>
+</svg>

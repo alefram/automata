@@ -31,8 +31,6 @@ class entradas(QDialog):
                     pass
                 data[i] = a
                 
-            
-
         def _print():
             print(data)
 
