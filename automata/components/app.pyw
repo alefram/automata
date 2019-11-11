@@ -17,14 +17,15 @@ class App(QMainWindow):
 		widget = QWidget()
 		widget.setLayout(layout)
 
+
 		#barra de menu
 		_combinacional = combinacional()
 		_mealy = mealy()
 		_moore = moore()
 
 		menubar = QTabWidget()
-		menubar.addTab(_mealy, "automata mealy")
-		menubar.addTab(_moore, "automata moore")
+		#menubar.addTab(_mealy, "automata mealy")
+		#menubar.addTab(_moore, "automata moore")
 		menubar.addTab(_combinacional, "combinacional")
 		layout.addWidget(menubar, 0, 0)
 

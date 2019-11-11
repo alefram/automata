@@ -13,19 +13,18 @@ data_in = [[1, 2, 3, 4],[1, 2, 3, 4],[1, 2, 3, 4],[1, 2, 3, 4],
           [1, 2, 3, 4],[1, 2, 3, 4],[1, 2, 3, 4],[1, 2, 3, 4],
           [1, 2, 3, 4],[1, 2, 3, 4],[1, 2, 3, 4],[1, 2, 3, 4]]
 
-class tablaTransicion(QDialog):
+class combSalidaMelay(QDialog):
     def __init__(self):
-        super(tablaTransicion ,self).__init__()
+        super(combSalidaMelay ,self).__init__()
         layout = QGridLayout()
         self.setLayout(layout)
         self.data_in = data_in
         self.data_out = data_out
-        
-        settings = QSettings()
+            
         
         #tabla
-        entrada = QTableWidget(16, 4)
-        salida = QTableWidget(16, 4)
+        entrada = QTableWidget(4, 4)
+        salida = QTableWidget(4, 4)
         newitem2 = QTableWidgetItem()
         newitem = QTableWidgetItem()
 
@@ -36,13 +35,11 @@ class tablaTransicion(QDialog):
         label_salida.setText("tabla de salidas")
 
         #boton
-        Btn = QDialogButtonBox.Save | QDialogButtonBox.Cancel
-        button = QDialogButtonBox(Btn)
         ok = QPushButton('ok')
         ok2 = QPushButton('ok2')
 
         def _matrix():
-            for i in range(0, 16):
+            for i in range(0, 4):
                 for j in range(0, 4):
                     newitem = entrada.item(i, j)
                     if (newitem == None):
@@ -57,7 +54,7 @@ class tablaTransicion(QDialog):
                     data_in[i][j] = a
         
         def _matrix2():
-            for i in range(0, 16):
+            for i in range(0, 4):
                 for j in range(0, 4):
                     newitem2 = salida.item(i, j)
                     if (newitem2 == None):
@@ -76,26 +73,16 @@ class tablaTransicion(QDialog):
         
         def _print2():
             print(self.data_out)
-        
-        def _accept():
-
-            pass
-        def _reject():
-
-            pass
 
         entrada.cellChanged.connect(_matrix)
         salida.cellChanged.connect(_matrix2)
         ok.clicked.connect(_print)
         ok2.clicked.connect(_print2)
-        button.accepted.connect(self.accept)
-        button.rejected.connect(self.reject)
 
         #mostrar
         layout.addWidget(entrada, 1, 0)
         layout.addWidget(salida,1,1)
-       # layout.addWidget(ok,2,0)
-       # layout.addWidget(ok2, 2, 1)
-        layout.addWidget(button,3,0)
+        layout.addWidget(ok,2,0)
+        layout.addWidget(ok2, 2, 1)
         layout.addWidget(label_entrada, 0, 0)
         layout.addWidget(label_salida,0,1)

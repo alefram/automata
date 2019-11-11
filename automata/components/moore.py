@@ -3,40 +3,104 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 from PyQt5.QtSvg import *
-from tablaEntrada import tablaEntrada
-from tablaSalida import tablaSalida
-from tablaTransicion import tablaTransicion
+from entradas import entradas
+from combEntrada import combEntrada
+from combSalida import combSalida
 
-def _tablaEntrada1():
-    sw = tablaEntrada()
-    sw.setWindowTitle("tabla de entrada 1")
-    sw.exec_()
+
+cont = 0
 
 def _TablaTransicion1():
-    sw = tablaTransicion()
-    sw.setWindowTitle("tabla de transicion 1")
+    sw = combEntrada()
+    sw.setWindowTitle("combinacional de entrada")
     sw.exec_()
 
-def _tablaEntrada2():
-    sw = tablaEntrada()
-    sw.setWindowTitle("tabla de entrada 2")
-    sw.exec_()
 
 def _TablaTransicion2():
-    sw = tablaTransicion()
-    sw.setWindowTitle("tabla de transicion 2")
+    sw = combSalida()
+    sw.setWindowTitle("combinacional de salida")
     sw.exec_()
 
 def _entradas():
+    sw = entradas()
+    sw.setWindowTitle('entradas')
+    sw.exec_()
     pass
 
 def _start():
     pass
 
-def _stop():
-    pass
 
 def _output():
+    entrada = entradas()
+    comb_entrada = combEntrada()
+    comb_salida = combSalida()
+    aux = comb_salida.data_in[0]
+    ent = 0
+    actual = 0
+    sal = 0
+
+    for x in range(0, 16):
+        if aux == comb_entrada.data_edoActual[x]:
+            break
+            pass
+        else:
+            actual = actual + 1
+            pass
+        pass
+
+    for i in range(0,16):
+        if entrada.dato_entrada == comb_entrada.data_entrada[i]:
+            break
+            pass
+        else:
+            ent = ent + 1
+            pass
+        pass
+
+
+    aux = comb_entrada.data_edoSiguiente[ent]
+
+    for z in range(0, 16):
+        if aux == comb_salida.data_in:
+            break
+            pass
+        else:
+            sal = sal + 1
+            pass
+        pass
+
+    for j in range(0, 4):
+        if j == 0:
+            if comb_salida.data_out[sal][j] == "1":
+                pinguino.write(b"digitalWrite(4,HIGH)")
+                pass
+            else:
+                pinguino.write(b"digitalWrite(4,LOW)")
+                pass
+        if j == 1:
+            if comb_salida.data_out[sal][j] == "1":
+                pinguino.write(b"digitalWrite(5,HIGH)")
+                pass
+            else:
+                pinguino.write(b"digitalWrite(5,LOW)")
+                pass
+            pass
+        if j == 2:
+            if comb_salida.data_out[sal][j] == "1":
+                pinguino.write(b"digitalWrite(6,HIGH)")
+                pass
+            else:
+                pinguino.write(b"digitalWrite(6,LOW)")
+                pass
+            pass
+        if j == 3:
+            if comb_salida.data_out[sal][j] == "1":
+                pinguino.write(b"digitalWrite(7,HIGH)")
+                pass
+            else:
+                pinguino.write(b"digitalWrite(7,LOW)")
+                pass
     pass
 
 
@@ -58,26 +122,17 @@ class moore(QWidget):
 
 
         #botones
-        combEntrada1 = QPushButton('tabla de entrada 1', self)
-        combEntrada1.clicked.connect(_tablaEntrada1)
-        
-        combTransicion1 = QPushButton('tabla de transicion 1', self)
+        combTransicion1 = QPushButton('Combinacional de entrada')
         combTransicion1.clicked.connect(_TablaTransicion1)
-
-        combEntrada2 = QPushButton('tabla de entrada 2', self)
-        combEntrada2.clicked.connect(_tablaEntrada2)
-        
-        combTransicion2 = QPushButton('tabla de transicion 2', self)
+     
+        combTransicion2 = QPushButton('Combinacional de salida')
         combTransicion2.clicked.connect(_TablaTransicion2)
 
-        entradas = QPushButton('entrada', self)
+        entradas = QPushButton('entrada')
         entradas.clicked.connect(_entradas)
 
         start = QPushButton('start')
         start.clicked.connect(_start)
-
-        stop = QPushButton('stop')
-        stop.clicked.connect(_stop)
 
         output = QPushButton('Output')
         output.clicked.connect(_output)
@@ -89,13 +144,10 @@ class moore(QWidget):
         layoutI.addWidget(entradas,0,1)
         layoutI.addWidget(svg, 0, 2)
         
-        layoutI.addWidget(combEntrada1, 2, 2)
         layoutI.addWidget(combTransicion1, 3, 2)
-        layoutI.addWidget(combEntrada2, 4, 2)
-        layoutI.addWidget(combTransicion2, 5, 2)
+        layoutI.addWidget(combTransicion2, 4, 2)
         
         layoutI.addWidget(start, 6,4)
-        layoutI.addWidget(stop, 6, 5)
         layoutI.addWidget(output, 6, 6)
         
         

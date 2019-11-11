@@ -4,18 +4,24 @@ from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 
 
-data = [2,3,4,1]
+dato_entrada = [2,3,4,1]
 
 class entradas(QDialog):
     def __init__(self):
         super(entradas ,self).__init__()
-        layout = QVBoxLayout()
+        layout = QGridLayout()
         self.setLayout(layout)
-        self.data = data      
+        self.dato_entrada = dato_entrada      
 
         #tabla
         tabla = QTableWidget(1, 4)
         newitem = QTableWidgetItem()
+
+        l_entrada = QLabel()
+        l_entrada.setText("entrada")
+
+        #boton
+        ok = QPushButton('ok')
 
         def datas():
             for i in range(0, 4):
@@ -29,13 +35,11 @@ class entradas(QDialog):
                 else:
                     a = newitem.text()
                     pass
-                data[i] = a
+                dato_entrada[i] = a
                 
         def _print():
-            print(data)
+            print(dato_entrada)
 
-        #boton
-        ok = QPushButton('ok')
         
         tabla.cellChanged.connect(datas)
         ok.clicked.connect(_print)
@@ -43,5 +47,6 @@ class entradas(QDialog):
         
 
         #mostrar
-        layout.addWidget(tabla)
-        layout.addWidget(ok)
+        layout.addWidget(l_entrada,0,0)
+        layout.addWidget(tabla,1,0)
+      #  layout.addWidget(ok,2,0)
