@@ -18,6 +18,8 @@ data_edoActual = [[1, 2, 3, 4],[1, 2, 3, 4],[1, 2, 3, 4],[1, 2, 3, 4],
           [1, 2, 3, 4],[1, 2, 3, 4],[1, 2, 3, 4],[1, 2, 3, 4],
           [1, 2, 3, 4],[1, 2, 3, 4],[1, 2, 3, 4],[1, 2, 3, 4]]
 
+          fnznnz
+
 class combEntrada(QDialog):
     def __init__(self):
         super(combEntrada ,self).__init__()
