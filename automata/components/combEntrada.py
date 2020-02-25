@@ -26,18 +26,17 @@ class combEntrada(QDialog):
         self.data_edoSiguiente = data_edoSiguiente
         self.data_edoActual = data_edoActual
         self.data_entrada = data_entrada
-            
-        
+
+
         #tabla
         entrada = QTableWidget(16, 4)
         salida = QTableWidget(16, 4)
         estado = QTableWidget(16, 4)
-        
+
         newitem = QTableWidgetItem()
 
         label_entrada = QLabel()
-        label_entrada.setText("tabla de entradas")
-
+        label_entrada.setText("tabla de entradas")j
         label_salida = QLabel()
         label_salida.setText("Estado siguiente")
 
@@ -51,7 +50,7 @@ class combEntrada(QDialog):
         ok3 = QPushButton('ok3')
 
         def _matrix():
-            for i in range(0, 16):
+    k        for i in range(0, 16):
                 for j in range(0, 4):
                     newitem = entrada.item(i, j)
                     if (newitem == None):
@@ -64,7 +63,7 @@ class combEntrada(QDialog):
                         a = newitem.text()
                         pass
                     data_entrada[i][j] = a
-        
+
         def _matrix2():
             for i in range(0, 16):
                 for j in range(0, 4):
@@ -97,10 +96,10 @@ class combEntrada(QDialog):
 
         def _print():
             print(self.data_entrada)
-        
+
         def _print2():
             print(self.data_edoSiguiente)
-        
+
         def _print3():
             print(self.data_edoActual)
 

@@ -20,8 +20,10 @@ class combSalidaMelay(QDialog):
         self.setLayout(layout)
         self.data_in = data_in
         self.data_out = data_out
-            
-        
+
+        adbAD
+
+
         #tabla
         entrada = QTableWidget(4, 4)
         salida = QTableWidget(4, 4)
@@ -52,7 +54,7 @@ class combSalidaMelay(QDialog):
                         a = newitem.text()
                         pass
                     data_in[i][j] = a
-        
+
         def _matrix2():
             for i in range(0, 4):
                 for j in range(0, 4):
@@ -70,7 +72,7 @@ class combSalidaMelay(QDialog):
 
         def _print():
             print(self.data_in)
-        
+
         def _print2():
             print(self.data_out)
 
